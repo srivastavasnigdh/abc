@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head>
+		<meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<!-- <script language="javascript" src="lib/jquery-1.9.1.min.js"></script>
+		<script language="javascript" src="lib/jquery-migrate-1.2.1.min.js"></script> -->
+		
+		<script language="javascript" src="lib/jquery-1.7.min.js"></script>
+		<!--<script language="javascript" src="lib/jquery-ui-1.10.2.custom.min.js"></script>-->
+		<script language="javascript" src="lib/jquery-ui-1.11.4.custom.min.js"></script>
+		
+        <![if gte IE 9]>
+        	<script language="javascript" src="lib/kinetic.js"></script> 
+        <![endif]>
+		<script type="text/javascript" src="/EZTestOnline/ezto_ext_api.js"></script>		
+		<script type="text/javascript">
+		    var dName = document.domain;
+		   if ((dName.indexOf(".com") > -1) && (dName.indexOf(".") > -1)) {
+		      var temp = dName.split(".");
+		      dName = temp[temp.length - 2] + "." + temp[temp.length - 1];
+		    }	    
+		    document.domain= dName; 	    
+		</script>
+		<script type='text/javascript'>
+
+		    setTimeout( function() {
+		    		 if(EZ.mode != "design"){
+		     		    //	$('.external',window.parent.document).removeAttr('style');
+		     		  $('.external',window.parent.document).css({ "-ms-transform": "none","-webkit-transform": "none","-moz-transform": "none", "transform": "none","padding" :"1px"});
+		        	}
+		      	  },2000);
+		    
+		    window.onorientationchange = function(){
+		    	
+		    	setTimeout( function() {
+		    		 if(EZ.mode != "design"){
+		     		    //	$('.external',window.parent.document).removeAttr('style');
+		     		  $('.external',window.parent.document).css({ "-ms-transform": "none","-webkit-transform": "none","-moz-transform": "none", "transform": "none","padding" :"1px"});
+		        	}
+		      	  },2000);
+		    
+		    } 
+		    
+		</script>
+  	</head>
+	<body>    
+   		<input type="hidden" id="cndOut" value=""/>
+	   	<div id="clickdrag_wrapper" style="height:100%;width:100%;">
+	   		<div class="loader-overlay" style="display: none;">
+					<img style="margin:25% 0 0 50%;" src="resources/themes/default/images/ajax-loader.gif"></img>
+			</div>
+			<span class="object-wrapper" style="width:100%;height:100%;">
+				<img style="margin:25% 0 0 50%;" src="resources/themes/default/images/ajax-loader.gif"></img>
+			</span>		 
+	   	</div>    
+        <script language="javascript" src="lib/cdauth-library-min.js?{build.number}"></script>
+        
+		<![if gte IE 9]>  
+	   		<script language="javascript" src="js/cdauth-min.js?{build.number}"></script>
+		<![endif]>
+		<script language="javascript" src="js/cdinit.js?{build.number}"></script>
+		
+	   	
+	   	<!-- <script language="javascript" src="js/lib/vectordraw_lib.js?{build.number}"></script>
+		<script language="javascript" src="js/cdstd-library-min.js?{build.number}"></script>
+		<script language="javascript" src="js/cdstd-min.js?{build.number}"></script> -->
+		
+		<script type="text/javascript" src="js/ClickDragApp_prod.js?{build.number}"></script>
+		<script language="javascript" src="js/lib/palette.js?{build.number}"></script>
+		<script language="javascript" src="js/cdezto.js?{build.number}"></script>
+		<input type="hidden" id="clickDrag-version-2.0" value="{build.number}"/>		 
+	</body>
+</html>
